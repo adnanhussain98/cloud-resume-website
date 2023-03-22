@@ -218,22 +218,20 @@
       <section class="resume-section" id="projects">
         <div class="resume-section-content">
           <h2 class="mb-5">Personal Projects</h2>
-          <p>
+          <h3 class="mb-0">
             AWS Cloud Resume Challenge (This online CV/Resume)
-          </p>
-          <p>Programming Languages/Tools used for this project</p>
+          </h3>
+          <p>This website is stored in AWS S3 and utilises a CloudFront distribution to serve the website globally. The domain name for the website was acquired from a 3rd party. The SSL certificate for it was obtained from Amazon Certificate Manager and the custom domain was configured in Route53</p>
+              <p>Terraform used to create and deploy a DynamoDB table and item within the table. This table was created to store the website visit count.</p>
+              <p>CI/CD for the front end. My GitHub repo stores the website code and is the source for the pipeline created in AWS Codepipeline. Once a change is made a pushed into Git, the pipeline will retreive the new files and then deploy them to S3.</p>
+          <div class="subheading mb-3">Programming Languages & Tools used in this project:</div>
           <ul>
             <li>HTML, CSS, Javascript</li>
             <li>Python</li>
             <li>AWS (S3, DynamoDB, IAM, CloudFront, Route53, Certificate Manager, Codepipeline, Lambda)</li>
             <li>GitHub</li>
             <li>Terraform</li>
-          </ul>
-          <ul>
-            <li>Website stored in AWS S3 and utilises a CloudFront distribution to serve the website globally. The domain name for the website was acquired from a 3rd party. The SSL certificate for it was obtained from Amazon Certificate Manager and the custom domain was configured in Route53</li>
-            <li>Terraform used to create and deploy a DynamoDB table and item within the table. This table was created to store the website visit count.</li>
-            <li>Implemented CI/CD for the front end. My GitHub repo stores the website code and is the source for the pipeline created in AWS Codepipeline. Once a change is made a pushed into Git, the pipeline will retreive the new files and then deploy them to S3.</li>
-          </ul>
+          </ul> 
         </div>
       </section>
       <!-- Interests-->
